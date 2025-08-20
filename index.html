@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="ポートフォリオサイト">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/favicon.svg">
+  <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+QLD:wght@100..400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Special Sweets</title>
+</head>
+
+<body>
+  <header id="header">
+    <div class="wrapper">
+      <h1 class="site-title">
+        <a href="index.html">Special Sweets</a>
+      </h1>
+      <nav class="menu">
+        <ul>
+          <li><a href="#product">商品のご紹介</a></li>
+          <li><a href="#contact">お問い合わせ</a></li>
+          <li><a href="#shop">お店へのアクセス</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div id="mainvisual">
+      <p>あなたの日常に<br>
+        &nbsp;優しいほろ苦さと<br>
+        &emsp;素敵な甘さを</p>
+    </div>
+
+    <section id="product" class="wrapper">
+      <h2 class="section-title">
+        <span class="ja">商品のご紹介</span>
+        <span class="en">Sweets</span>
+      </h2>
+      <div class="item">
+        <div class="text">
+          <p class="title">ケーキ</p>
+          <p class="explanation">
+            ふわふわなスポンジと甘すぎないクリームで仕上げた<br class="spbr">
+            ストロベリーケーキはもちろん<br class="spbr">
+            チョコレートケーキやモンブラン、タルトケーキ等も<br class="spbr">
+            取り揃えております
+          </p>
+        </div>
+        <div class="img">
+          <img src="img/cake.jpg" alt="ケーキ">
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="img">
+          <img src="img/cookies.jpg" alt="クッキー">
+        </div>
+        <div class="text">
+          <p class="title">クッキー</p>
+          <p class="explanation">
+            サクサクほろほろなクッキーを焼き上げました<br class="spbr">
+            いろいろな味もご用意しておりますので<br class="spbr">
+            是非ご賞味ください
+          </p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="text">
+          <p class="title">チョコレート</p>
+          <p class="explanation">
+            甘いチョコレート、ほろ苦いチョコレート<br class="spbr">
+            いろいろな味のチョコを様々な形に変身させました<br class="spbr">
+            贈り物にもいかがでしょうか
+          </p>
+        </div>
+        <div class="img">
+          <img src="img/pops.jpg" alt="チョコレート">
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="wrapper">
+      <h2 class="section-title">
+        <span class="ja">お問い合わせ</span>
+        <span class="en">contact</span>
+      </h2>
+      <form action="#" method="post">
+        <dl>
+          <dt><label for="name">お名前</label></dt>
+          <dd><input type="text" id="name" placeholder="お名前を入力してください"></dd>
+          <dt><label for="email">メールアドレス</label></dt>
+          <dd><input type="email" id="email" placeholder="xxxxxx@xxx.xxx"></dd>
+          <dt><label for="comment">お問い合わせ内容</label></dt>
+          <dd><textarea name="comment" id="comment"></textarea></dd>
+          <input type="submit" value="送信" class="send">
+        </dl>
+      </form>
+    </section>
+
+    <section id="shop">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1662975.6624991791!2d138.45035064196932!3d35.50429452811036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x605d1b87f02e57e7%3A0x2e01618b22571b89!2z5p2x5Lqs6YO9!5e0!3m2!1sja!2sjp!4v1754563252991!5m2!1sja!2sjp"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <p class="copyright">&copy; Special Sweets</p>
+  </footer>
+</body>
+
+</html>
