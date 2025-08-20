@@ -86,7 +86,7 @@ li {
 /* mainvisual */
 #mainvisual {
   height: calc(100vh - 80px);
-  background: url(img/macaroons.jpg) no-repeat center top/cover;
+  background: url(macaroons.jpg) no-repeat center top/cover;
   margin-bottom: 100px;
   position: relative;
 }
@@ -250,4 +250,5 @@ li {
   #contact form dl dd {
     width: 100%;
   }
+
 }
