@@ -1,0 +1,253 @@
+@charset "utf-8";
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background-color: #fde8d0;
+  color: #752100;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+li {
+  list-style: none;
+}
+
+.site-title {
+  font-family: "Playwrite AU QLD", cursive;
+}
+
+.site-title a {
+  display: block;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 4%;
+  margin: 0 auto;
+}
+
+.section-title {
+  display: inline-block;
+  font-weight: normal;
+  line-height: 1;
+  margin-bottom: 30px;
+  padding: 10px 20px;
+  border-top: 1px solid #752100;
+  border-bottom: 1px solid #752100;
+}
+.section-title .ja {
+  display: block;
+  font-size: 2rem;
+  letter-spacing: 0.2em;
+}
+.section-title .en {
+  display: block;font-size: 1.25rem;
+}
+/* header */
+#header {
+  height: 80px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+#header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header .menu ul{
+  display: flex;
+  align-items: center;
+}
+
+#header .menu li {
+  margin-left: 30px;
+}
+#header .menu li:first-child {
+  margin-left: 0;
+}
+#header .menu li:hover {
+  opacity: 0.7;
+}
+/* mainvisual */
+#mainvisual {
+  height: calc(100vh - 80px);
+  background: url(img/macaroons.jpg) no-repeat center top/cover;
+  margin-bottom: 100px;
+  position: relative;
+}
+#mainvisual p {
+  writing-mode: vertical-rl;
+  color: #fff;
+  font-size: 2rem;
+  line-height: 2;
+  letter-spacing: 0.3em;
+  position: absolute;
+  right: 50px;
+  top: 50px;
+}
+/* product */
+#product {
+  margin-bottom: 50px;
+}
+#product .item {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+#product .item:nth-of-type(2) {
+  flex-direction: row-reverse;
+}
+#product .item .img {
+  width: 53%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+#product .item .text {
+  width: 55%;
+  background-color: #fff;
+  padding: 50px;
+  position: absolute;
+  bottom: 100px;
+  right: 0;
+}
+#product .item:nth-of-type(1) .text {
+  background: rgba(227, 168, 225, 0.6);
+}
+#product .item:nth-of-type(2) .text {
+  left: 0;
+  background: rgba(168, 227, 227, 0.6);
+}
+#product .item:nth-of-type(3) .text {
+  background: rgba(209, 182, 136, 0.6);
+  bottom: 50px;
+}
+#product .item .text .title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+#product .item .text .explanation {
+  line-height: 2;
+}
+/* contact */
+#contact {
+  margin-bottom: 100px;
+}
+#contact form dl {
+  display: flex;
+  flex-wrap: wrap;
+}
+#contact form dt {
+  width: 20%;
+  margin-bottom: 10px;
+}
+#contact form dd {
+  width: 80%;
+  margin-bottom: 10px;
+}
+#contact form dd input {
+  width: 100%;
+  background-color: #fff;
+  padding: 10px;
+}
+#contact form dd textarea {
+  width: 100%;
+  height: 200px;
+  background-color: #fff;
+}
+#contact form .send {
+  display: inline-block;
+  height: 80px;
+  width: 200px;
+  background-color: rgb(79, 33, 8);
+  color: #fff;
+  margin: 50px auto 0 auto;
+  transition: all 0.3s ease-in;
+}
+#contact form .send:hover {
+  background-color: rgb(130, 76, 35);
+  transform: translateY(-10px);
+}
+/* shop */
+#shop iframe {
+  width: 100%; 
+}
+/* footer */
+#footer {
+  padding: 20px;
+  text-align: center;
+}
+/* responsive */
+@media screen and (max-width: 768px) {
+  .site-title {
+    margin-bottom: 10px;
+  }
+  .spbr {
+    display: none;
+  }
+  /* header */
+  #header {
+    height: 100px;
+  }
+  #header .wrapper {
+    flex-direction: column;
+  }
+  #header .menu li {
+    font-size: 0.875rem;
+  }
+  /* mainvisual */
+  #mainvisual {
+    height: calc(100vh - 100px);
+    background-position: 55% top;
+  }
+  #mainvisual p {
+    font-size: 1.5rem;
+  }
+  /* product */
+  #product .item {
+    height: auto;
+    flex-direction: column;
+    position: static;
+  }
+  #product .item .img {
+    width: 100%;
+    position: static;
+    margin-bottom: 30px;
+  }
+  #product .item .text {
+    width: 100%;
+    position: static;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  #product .item:nth-of-type(2) {
+    flex-direction: column-reverse;
+  }
+  /* contact */
+  #contact form dl {
+    flex-direction: column;
+  }
+  #contact form dl dt {
+    width: 100%;
+  }
+  #contact form dl dd {
+    width: 100%;
+  }
+}
